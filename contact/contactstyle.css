@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cascadia Code';
+}
+
+body {
+    width: 100%;
+    background-color: black;
+}
+
+.firstbg {
+    width: 100%;
+}
+
+.firstbg img{
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    z-index: 2;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+    max-height: 90px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.673));
+    transition-duration: 200ms;
+}
+
+.logo:hover #capitaur {
+    transition-duration: 750ms;
+        transform: scale(2);
+        transform: translateY(-20px);
+    }
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li {
+    align-items: flex-end;
+    margin-top: 25px;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    color: rgb(252, 245, 237);
+    margin: 0 1vw;
+    padding: 7px 15px;
+}
+
+.navbar a:hover {
+    /* color: rgb(255, 160, 247); */
+    background-color: rgba(23, 23, 23, 0.105);
+    border-radius: 5px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+}
+
+.reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+}
+
+.logosres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    width: 70%;
+    height: 200px;
+}
+
+.logores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    border-radius: 20px;
+    transition: all 200ms;
+}
+
+.logores img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.logores h2 {
+    margin-top: 15px;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 5px black;;
+}
+
+.logores:hover {
+    transition-duration: 200ms;
+    transform: scale(1.1);
+}

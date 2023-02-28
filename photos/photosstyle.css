@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cascadia Code';
+    color: rgb(252, 245, 237);
+}
+
+
+body {
+    width: 100%;
+    background-color: black;
+}
+
+.firstbg {
+    width: 100%;
+}
+
+.firstbg img{
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    z-index: 2;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    object-fit: contain;
+    max-height: 90px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.673));
+}
+
+.navbar li {
+    align-items: flex-end;
+    margin-top: 25px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    color: rgb(252, 245, 237);
+    margin: 0 1vw;
+    padding: 7px 15px;
+}
+
+.navbar a:hover {
+    /* color: rgb(255, 160, 247); */
+    background-color: rgba(235, 231, 255, 0.105);
+    border-radius: 5px;
+}
